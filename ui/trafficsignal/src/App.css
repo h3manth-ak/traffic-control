@@ -1,0 +1,92 @@
+/* Add this to your CSS file */
+
+.signal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.signal-illustration {
+    border: 2px solid #000;
+    width: 80px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.button-container button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.traffic-signal-system {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-signal,
+.left-signal,
+.bottom-signal,
+.right-signal {
+  flex: 1;
+  text-align: center;
+}
+
+.top-signal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  order: 1;
+  transform: translateX(-50%);
+}
+
+.left-signal {
+  top: 50% ;
+  left: 0;
+  order: 2;
+  transform: translateY(-50%);
+}
+
+.bottom-signal { 
+  bottom: 0;
+  left: 50%;
+  order: 3;
+  transform: translateX(0%);
+  transform: translateY(200px);
+}
+
+.right-signal {
+  top: 50%;
+  right: 0;
+  order: 4;
+  transform: translateY(-50%);
+}
+
