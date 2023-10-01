@@ -62,11 +62,11 @@ def get_max_count_kunu():
 def send_email():
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("test49415@gmail.com", "wzgd jdol rinh uatq")
+    s.login("your-email", "password")
     subject = 'Accident Alert'
     body = 'Accident has been detected '
     message = f'Subject: {subject}\n\n{body}'
-    s.sendmail("test49415@gmail.com", "vaishnavvijayan25@gmail.com", message)
+    s.sendmail("your-email", "sender-email", message)
     s.quit()
 # count the number of vehicles
 def vehicles(img_path,traffic):
